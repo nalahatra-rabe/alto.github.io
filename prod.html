@@ -1,0 +1,1825 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width , initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <title>MUSIKA | Production Musical</title>
+    <link rel="stylesheet" type="text/css" href="./asset/css/index.css" />
+    <link rel="shortcut icon" href="./asset/img/ICON PACK/Audio Wave_50px.png" />
+    <link rel="stylesheet" href="./asset/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./asset/css/w3.css">
+    <link rel="stylesheet" href="./asset/plugins/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="./asset/css/prod.css">
+    <style>
+        .input-container {
+            display: -ms-flexbox;
+            /* IE10 */
+            display: flex;
+            width: 100%;
+            margin-bottom: 15px;
+        }
+        
+        .icon {
+            padding: 10px;
+            background: dodgerblue;
+            color: white;
+            min-width: 50px;
+            text-align: center;
+            border-radius: 10px 0px 0px 0px;
+        }
+        
+        .input-field {
+            width: 100%;
+            padding: 10px;
+            outline: none;
+            background: rgba(36, 37, 42, .8);
+            border: 0;
+            border-radius: 0px 5px 0px 0px;
+            transition: all 0.5s ease;
+            color: #fdfdfd;
+        }
+        
+        .input-field:focus {
+            background: #24252A;
+        }
+    </style>
+    <!-- droptdown menu -->
+
+</head>
+
+<body>
+    <header>
+        <a name="top"></a>
+
+        <nav class="navbar navbar-expand-sm bg-dark  fixed-top navbar-dark " id="myNav">
+            <!-- Brand/logo -->
+            <a class="navbar-brand" href="./index.html">MUSIKA | <b style="font-size: 12px;">The World of Music</b></a>
+            <!--Bar de recherche-->
+            <form class="form-inline" action="./index.html">
+                <input class="form-control mr-sm-2" type="text" placeholder="Recherche...">
+                <button class="btn btn-primary" type="submit"><i class="fa fa-search"></i></button>
+            </form>
+
+            <!--fin barre de recherche-->
+            <!-- Links -->
+            <ul class="navbar-nav">
+                <li class="nav-item ">
+                    <a class="nav-link " href="./index.html"><img src="./asset/img/ICON PACK/Home_48px.png" alt=""></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="./prod.html"><img src="./asset/img/ICON PACK/Audio Wave_50px.png" alt=""></a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="./meet.html"><img src="./asset/img/ICON PACK/Heart_50px.png" alt=""></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./pay.html"><img src="./asset/img/ICON PACK/Shopping Bag_64px.png" alt="">
+                        <span class="badge badge-danger" style="position: absolute;">1</span></a>
+                </li>
+
+
+
+                <!-- end notification -->
+                <li class="nav-item menu-item">
+                    <a class="nav-link" onclick="openNav()"><img src="./asset/img/ICON PACK/Bars.png" alt=""></a>
+                </li>
+            </ul>
+        </nav>
+
+    </header>
+    <!-- side navigation -->
+
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <p>OPTION</p>
+        <a href="./login.html">INSCRIPTION</a>
+        <a href="./login.html">SE CONNECTER</a>
+        <a href="./pay.html">MON PAYEMENT</a>
+        <a href="./meet.html">MEET-IN</a>
+
+    </div>
+    <!-- music player -->
+    <div class="music_player bg-primary fixed-bottom w3-card-4">
+        <div class="row">
+            <div class="col-xl-4 col-lx-4-md-4-sm-4-col-4">
+                <div class="content_1">
+                    <img src="./asset/img/ahf.jpg" alt="played_track">
+                    <h5>TRINIX [FUTUREBASS]</h5>
+                    <p>Let the Moon ft Linda Benson x Lil Nas</p>
+                </div>
+            </div>
+            <div class="col-xl-4 col-lx-4-md-4-sm-4-col-4">
+                <div class="content_2">
+                    <div>
+                        <p>00:24</p>
+                        <p>03:24</p>
+                        <div class="miniteur">
+                            <span class="inter"></span>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="col-xl-4 col-lx-4-md-4-sm-4-col-4">
+                <div class="content_3 w3-center">
+                    <div>
+                        <i class="fa fa-volume-up" style="margin-left: -40px;"></i>
+                        <i class="fa fa-step-backward"></i>
+                        <i class="fa fa-play" onclick="play(event)" data-url="http://127.0.0.1:5501/asset/audio/prod.wav"></i>
+                        <i class="fa fa-step-forward"></i>
+                        <i class="fa fa-random"></i>
+                        <i class="fa fa-retweet"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- end music player -->
+    <div class="row">
+        <div class="left_Content col-lx-10 col-lg-10 col-md-10 col-sm-12 col-12">
+            <!-- mini banner -->
+            <div class="intro_banner">
+                <h2>MUSIKA | LE MONDE DE LA MUSIQUE ET DU BUISINESS</h2>
+                <h1>DU NOUVELLE POUR <br> <b>LE WEEKEND??</b></h1>
+                <P>Annonce du sortie de la nouvelle album de <b>JUL</b><br> avec le featuring de Kalash criminel et de booba
+                </P>
+                <div style="letter-spacing: 1px;">
+                    <button class="btn btn-primary"> <i class="fa fa-play"></i> Ecouter</button>
+                    <button class="btn btn-primary" data-toggle="modal" data-target="#myModal2"><i class="fa fa-shopping-bag"></i>  Acheter</button>
+                </div>
+            </div>
+            <!-- fin mini banner -->
+            <div class="list_album">
+                <a name="new_album"></a>
+                <h5 class="w3-text-grey">LES DERNIERE ALBUM SORTIE</h5>
+                <h6>Tout les album sortie ce weekend</h6>
+                <div class="mini_album row">
+
+                    <div class="col-xl-2 col-lg-2 col-md-4 col-sm-12 col-12">
+                        <a href="" data-toggle="modal" data-target="#myModal1">
+                            <img src="./asset/img/album/1.jpg" alt="album">
+                            <p><i class="fa fa-play"></i></p>
+                        </a>
+                    </div>
+                    <div class="col-xl-2 col-lg-2 col-md-4 col-sm-12 col-12">
+                        <a href="" data-toggle="modal" data-target="#myModal7">
+                            <img src="./asset/img/album/7.jpg" alt="album">
+                        </a>
+                    </div>
+                    <div class="col-xl-2 col-lg-2 col-md-4 col-sm-12 col-12">
+                        <a href="" data-toggle="modal" data-target="#myModal3">
+                            <img src="./asset/img/album/3.jpg" alt="album">
+                        </a>
+                    </div>
+                    <div class="col-xl-2 col-lg-2 col-md-4 col-sm-12 col-12">
+                        <a href="" data-toggle="modal" data-target="#myModal4">
+                            <img src="./asset/img/album/4.jpg" alt="album">
+                        </a>
+                    </div>
+                    <div class="col-xl-2 col-lg-2 col-md-4 col-sm-12 col-12">
+                        <a href="" data-toggle="modal" data-target="#myModal5">
+                            <img src="./asset/img/album/5.jpg" alt="album">
+                        </a>
+                    </div>
+                    <div class="col-xl-2 col-lg-2 col-md-4 col-sm-12 col-12">
+                        <a href="" data-toggle="modal" data-target="#myModal6">
+                            <img src="./asset/img/album/6.jpg" alt="album">
+                        </a>
+                    </div>
+                </div>
+                <div class="mini_album row">
+
+                    <div class="col-xl-2 col-lg-2 col-md-4 col-sm-12 col-12">
+                        <a href="" data-toggle="modal" data-target="#myModal8">
+                            <img src="./asset/img/album/8.jpg" alt="album">
+                            <p><i class="fa fa-play"></i></p>
+                        </a>
+                    </div>
+                    <div class="col-xl-2 col-lg-2 col-md-4 col-sm-12 col-12">
+                        <a href="" data-toggle="modal" data-target="#myModal9">
+                            <img src="./asset/img/album/9.jpg" alt="album">
+                        </a>
+                    </div>
+                    <div class="col-xl-2 col-lg-2 col-md-4 col-sm-12 col-12">
+                        <a href="" data-toggle="modal" data-target="#myModal10">
+                            <img src="./asset/img/album/10.jpg" alt="album">
+                        </a>
+                    </div>
+                    <div class="col-xl-2 col-lg-2 col-md-4 col-sm-12 col-12">
+                        <a href="" data-toggle="modal" data-target="#myModalh">
+                            <img src="./asset/img/album/h.jpg" alt="album">
+                        </a>
+                    </div>
+                    <div class="col-xl-2 col-lg-2 col-md-4 col-sm-12 col-12">
+                        <a href="" data-toggle="modal" data-target="#myModalopoca">
+                            <img src="./asset/img/album/opoca.jpg" alt="album">
+                        </a>
+                    </div>
+                    <div class="col-xl-2 col-lg-2 col-md-4 col-sm-12 col-12">
+                        <a href="" data-toggle="modal" data-target="#myModal13">
+                            <img src="./asset/img/album/13.jpg" alt="album">
+                        </a>
+                    </div>
+                </div>
+                <div class="mini_album row">
+
+                    <div class="col-xl-2 col-lg-2 col-md-4 col-sm-12 col-12">
+                        <a href="" data-toggle="modal" data-target="#myModal14">
+                            <img src="./asset/img/album/14.jpg" alt="album">
+                            <p><i class="fa fa-play"></i></p>
+                        </a>
+                    </div>
+                    <div class="col-xl-2 col-lg-2 col-md-4 col-sm-12 col-12">
+                        <a href="" data-toggle="modal" data-target="#myModal15">
+                            <img src="./asset/img/album/15.jpg" alt="album">
+                        </a>
+                    </div>
+                    <div class="col-xl-2 col-lg-2 col-md-4 col-sm-12 col-12">
+                        <a href="" data-toggle="modal" data-target="#myModal16">
+                            <img src="./asset/img/album/16.jpg" alt="album">
+                        </a>
+                    </div>
+                    <div class="col-xl-2 col-lg-2 col-md-4 col-sm-12 col-12">
+                        <a href="" data-toggle="modal" data-target="#myModalpo">
+                            <img src="./asset/img/album/po.jpg" alt="album">
+                        </a>
+                    </div>
+                    <div class="col-xl-2 col-lg-2 col-md-4 col-sm-12 col-12">
+                        <a href="" data-toggle="modal" data-target="#myModalmus2">
+                            <img src="./asset/img/album/musique 2.jpg" alt="album">
+                        </a>
+                    </div>
+                    <div class="col-xl-2 col-lg-2 col-md-4 col-sm-12 col-12">
+                        <a href="" data-toggle="modal" data-target="#myModalmus1">
+                            <img src="./asset/img/album/musique 1.jpg" alt="album">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="numero w3-center" style="margin-top: 50px;">
+                <button class="btn btn-primary" style="border-radius: 100px;"><</button>
+                <button class="btn btn-secondary">1</button>
+                <button class="btn btn-primary">2</button>
+                <button class="btn btn-primary">3</button>
+                <button class="btn btn-primary">4</button>
+                <button class="btn btn-primary" style="border-radius: 100px;">></button>
+            </div>
+        </div>
+        <!-- history content -->
+        <div class="right_Content col-lx-2 col-lg-2 col-md-2 col-sm-12 col-12 w3-light-grey">
+            <div class="history">
+                <div class="history_head w3-text-grey">
+                    <p>
+                        <i class="fa fa-history"></i> Historique d'&eacute;coute
+                    </p>
+                </div>
+                <div class="history_body">
+                    <div class="element_history_1" data-url="http://127.0.0.1:5501/asset/audio/kalid.wav" onclick="play(event)">
+                        <img src="./asset/img/h.jpg" alt="pdp_history">
+                        <div>
+                            <h6>Mr AHF [REMIX]</h6>
+                            <p>KSHMR ft BROOKS - Voice</p>
+                            <p> <i class="fa fa-play"></i> 39k <i class="fa fa-heart"></i> 24k <i class="fa fa-download"></i> 20k</p>
+                        </div>
+                    </div>
+                    <div class="element_history_2">
+                        <img src="./asset/img/prod/voir plus.jpg" alt="pdp_history">
+                        <div>
+                            <h6>JONAS BLUE [TROPICAL HOUSE]</h6>
+                            <p>Mama ft Loliwine</p>
+                            <p> <i class="fa fa-play"></i> 19k <i class="fa fa-heart"></i> 10k <i class="fa fa-download"></i> 5k</p>
+                        </div>
+                    </div>
+                    <div class="element_history_3">
+                        <img src="./asset/img/prod/business.jpg" alt="pdp_history">
+                        <div>
+                            <h6>DRAKE [UK DRILL]</h6>
+                            <p>God's plane</p>
+                            <p> <i class="fa fa-play"></i> 40k <i class="fa fa-heart"></i> 30k <i class="fa fa-download"></i> 20k</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        <!-- end history content -->
+    </div>
+    <!-- The Modal -->
+    <div class="modal fade" id="myModal">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h5 class="modal-title">MUSIKA | ACHETER / ECOUTER</h5>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    Modal body..
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer" style="background: #24252A;">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Annuler</button>
+                    <button class="btn btn-primary" data-dismiss="modal" onclick="play(event)" data-url="http://127.0.0.1:5501/asset/audio/prod.wav">Ecouter
+                    </button>
+                    <button class="btn btn-primary">Acheter</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- The Modal -->
+    <div class="modal fade" id="myModal1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <form action="" method="get">
+
+                    <!-- Modal Header -->
+                    <div class="modal-header" style="background: #24252A;">
+                        <h5 class="modal-title" style="color: white;">MUSIKA | ACHETER / ECOUTER</h5>
+                        <button type="button" class="close" data-dismiss="modal"><span style="color: #fdfdfd;">&times;</span></button>
+                    </div>
+
+                    <!-- Modal body -->
+                    <div class="modal-body" style="background: #fdfdfd;">
+                        <table>
+                            <tr>
+                                <td><img src="./asset/img/album/1.jpg" alt="1" width="100px" height="100px"></td>
+                                <td>
+                                    <div style="margin-left: 10px;">
+                                        <p>ALAN WALKER</p>
+                                        <p>Spectre</p>
+                                        <p> <i class="fa fa-play"></i> 39k <i class="fa fa-heart"></i> 24k <i class="fa fa-download"></i> 20k</p>
+                                    </div>
+
+                                </td>
+                            </tr>
+                        </table>
+                        <table width="100%" style="margin-top:10px;">
+                            <tr>
+                                <td>
+                                    <div class="input-container">
+                                        <i class="fa fa-user icon"></i>
+                                        <input class="input-field" type="text" placeholder="Nom" required>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="input-container">
+                                        <i class="fa fa-envelope icon"></i>
+                                        <input class="input-field" type="email" placeholder="Email" required>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="input-container">
+                                        <i class="fa fa-key icon"></i>
+                                        <input class="input-field" type="password" placeholder="Mot de passe" required>
+                                    </div>
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="input-container">
+                                        <i class="fa fa-money icon"></i>
+                                        <select name="pay" id="payType">
+                                            <option>MOBILE MONEY</option>
+                                            <option>VISA</option>
+                                            <option>PAYPAL</option>
+                                  
+                                        </select>
+                                    </div>
+                                </td>
+                                <td></td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <!-- Modal footer -->
+                    <div class="modal-footer" style="background: #24252A;">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Annuler</button>
+                        <button class="btn btn-primary" data-dismiss="modal" onclick="play(event)" data-url="http://127.0.0.1:5501/asset/audio/prod.wav">Ecouter
+                    </button>
+                        <button class="btn btn-primary" type="submit">Acheter</button>
+                    </div>
+
+            </div>
+            </form>
+        </div>
+    </div>
+    <!-- The Modal -->
+    <div class="modal fade" id="myModal7">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <form action="" method="get">
+
+                    <!-- Modal Header -->
+                    <div class="modal-header" style="background: #24252A;">
+                        <h5 class="modal-title" style="color: white;">MUSIKA | ACHETER / ECOUTER</h5>
+                        <button type="button" class="close" data-dismiss="modal"><span style="color: #fdfdfd;">&times;</span></button>
+                    </div>
+
+                    <!-- Modal body -->
+                    <div class="modal-body" style="background: #fdfdfd;">
+                        <table>
+                            <tr>
+                                <td><img src="./asset/img/album/7.jpg" alt="1" width="100px" height="100px"></td>
+                                <td>
+                                    <div style="margin-left: 10px;">
+                                        <p>ENRIC ENGLESIAS</p>
+                                        <p>Padre</p>
+                                        <p> <i class="fa fa-play"></i> 19k <i class="fa fa-heart"></i> 14k <i class="fa fa-download"></i> 10k</p>
+                                    </div>
+
+                                </td>
+                            </tr>
+                        </table>
+                        <table width="100%" style="margin-top:10px;">
+                            <tr>
+                                <td>
+                                    <div class="input-container">
+                                        <i class="fa fa-user icon"></i>
+                                        <input class="input-field" type="text" placeholder="Nom" required>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="input-container">
+                                        <i class="fa fa-envelope icon"></i>
+                                        <input class="input-field" type="email" placeholder="Email" required>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="input-container">
+                                        <i class="fa fa-key icon"></i>
+                                        <input class="input-field" type="password" placeholder="Mot de passe" required>
+                                    </div>
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="input-container">
+                                        <i class="fa fa-money icon"></i>
+                                        <select name="pay" id="payType">
+                                            <option>MOBILE MONEY</option>
+                                            <option>VISA</option>
+                                            <option>PAYPAL</option>
+                                  
+                                        </select>
+                                    </div>
+                                </td>
+                                <td></td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <!-- Modal footer -->
+                    <div class="modal-footer" style="background: #24252A;">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Annuler</button>
+                        <button class="btn btn-primary" data-dismiss="modal" onclick="play(event)" data-url="http://127.0.0.1:5501/asset/audio/prod.wav">Ecouter
+                    </button>
+                        <button class="btn btn-primary" type="submit">Acheter</button>
+                    </div>
+
+            </div>
+            </form>
+        </div>
+    </div>
+    <!-- The Modal -->
+    <div class="modal fade" id="myModal3">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <form action="" method="get">
+
+                    <!-- Modal Header -->
+                    <div class="modal-header" style="background: #24252A;">
+                        <h5 class="modal-title" style="color: white;">MUSIKA | ACHETER / ECOUTER</h5>
+                        <button type="button" class="close" data-dismiss="modal"><span style="color: #fdfdfd;">&times;</span></button>
+                    </div>
+
+                    <!-- Modal body -->
+                    <div class="modal-body" style="background: #fdfdfd;">
+                        <table>
+                            <tr>
+                                <td><img src="./asset/img/album/3.jpg" alt="1" width="100px" height="100px"></td>
+                                <td>
+                                    <div style="margin-left: 10px;">
+                                        <p>THE WEEKENDES</p>
+                                        <p>Blindign night</p>
+                                        <p> <i class="fa fa-play"></i> 39k <i class="fa fa-heart"></i> 24k <i class="fa fa-download"></i> 20k</p>
+                                    </div>
+
+                                </td>
+                            </tr>
+                        </table>
+                        <table width="100%" style="margin-top:10px;">
+                            <tr>
+                                <td>
+                                    <div class="input-container">
+                                        <i class="fa fa-user icon"></i>
+                                        <input class="input-field" type="text" placeholder="Nom" required>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="input-container">
+                                        <i class="fa fa-envelope icon"></i>
+                                        <input class="input-field" type="email" placeholder="Email" required>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="input-container">
+                                        <i class="fa fa-key icon"></i>
+                                        <input class="input-field" type="password" placeholder="Mot de passe" required>
+                                    </div>
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="input-container">
+                                        <i class="fa fa-money icon"></i>
+                                        <select name="pay" id="payType">
+                                            <option>MOBILE MONEY</option>
+                                            <option>VISA</option>
+                                            <option>PAYPAL</option>
+                                  
+                                        </select>
+                                    </div>
+                                </td>
+                                <td></td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <!-- Modal footer -->
+                    <div class="modal-footer" style="background: #24252A;">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Annuler</button>
+                        <button class="btn btn-primary" data-dismiss="modal" onclick="play(event)" data-url="http://127.0.0.1:5501/asset/audio/1.mp3">Ecouter
+                    </button>
+                        <button class=" btn btn-primary " type="submit ">Acheter</button>
+                    </div>
+
+            </div>
+            </form>
+        </div>
+    </div>
+
+
+    <!-- The Modal -->
+    <div class="modal fade" id="myModal4">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <form action="" method="get">
+
+                    <!-- Modal Header -->
+                    <div class="modal-header" style="background: #24252A;">
+                        <h5 class="modal-title" style="color: white;">MUSIKA | ACHETER / ECOUTER</h5>
+                        <button type="button" class="close" data-dismiss="modal"><span style="color: #fdfdfd;">&times;</span></button>
+                    </div>
+
+                    <!-- Modal body -->
+                    <div class="modal-body" style="background: #fdfdfd;">
+                        <table>
+                            <tr>
+                                <td><img src="./asset/img/album/4.jpg" alt="1" width="100px" height="100px"></td>
+                                <td>
+                                    <div style="margin-left: 10px;">
+                                        <p>JHONAS BLUE</p>
+                                        <p>Mama</p>
+                                        <p> <i class="fa fa-play"></i> 39k <i class="fa fa-heart"></i> 24k <i class="fa fa-download"></i> 20k</p>
+                                    </div>
+
+                                </td>
+                            </tr>
+                        </table>
+                        <table width="100%" style="margin-top:10px;">
+                            <tr>
+                                <td>
+                                    <div class="input-container">
+                                        <i class="fa fa-user icon"></i>
+                                        <input class="input-field" type="text" placeholder="Nom" required>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="input-container">
+                                        <i class="fa fa-envelope icon"></i>
+                                        <input class="input-field" type="email" placeholder="Email" required>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="input-container">
+                                        <i class="fa fa-key icon"></i>
+                                        <input class="input-field" type="password" placeholder="Mot de passe" required>
+                                    </div>
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="input-container">
+                                        <i class="fa fa-money icon"></i>
+                                        <select name="pay" id="payType">
+                                        <option>MOBILE MONEY</option>
+                                        <option>VISA</option>
+                                        <option>PAYPAL</option>
+                              
+                                    </select>
+                                    </div>
+                                </td>
+                                <td></td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <!-- Modal footer -->
+                    <div class="modal-footer" style="background: #24252A;">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Annuler</button>
+                        <button class="btn btn-primary" data-dismiss="modal" onclick="play(event)" data-url="http://127.0.0.1:5501/asset/audio/prod.wav">Ecouter
+                </button>
+                        <button class="btn btn-primary" type="submit">Acheter</button>
+                    </div>
+
+            </div>
+            </form>
+        </div>
+    </div>
+    <!-- The Modal -->
+    <div class="modal fade" id="myModal5">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <form action="" method="get">
+
+                    <!-- Modal Header -->
+                    <div class="modal-header" style="background: #24252A;">
+                        <h5 class="modal-title" style="color: white;">MUSIKA | ACHETER / ECOUTER</h5>
+                        <button type="button" class="close" data-dismiss="modal"><span style="color: #fdfdfd;">&times;</span></button>
+                    </div>
+
+                    <!-- Modal body -->
+                    <div class="modal-body" style="background: #fdfdfd;">
+                        <table>
+                            <tr>
+                                <td><img src="./asset/img/album/5.jpg" alt="1" width="100px" height="100px"></td>
+                                <td>
+                                    <div style="margin-left: 10px;">
+                                        <p>LEOWANS JENKING</p>
+                                        <p>Love Story</p>
+                                        <p> <i class="fa fa-play"></i> 39k <i class="fa fa-heart"></i> 24k <i class="fa fa-download"></i> 20k</p>
+                                    </div>
+
+                                </td>
+                            </tr>
+                        </table>
+                        <table width="100%" style="margin-top:10px;">
+                            <tr>
+                                <td>
+                                    <div class="input-container">
+                                        <i class="fa fa-user icon"></i>
+                                        <input class="input-field" type="text" placeholder="Nom" required>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="input-container">
+                                        <i class="fa fa-envelope icon"></i>
+                                        <input class="input-field" type="email" placeholder="Email" required>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="input-container">
+                                        <i class="fa fa-key icon"></i>
+                                        <input class="input-field" type="password" placeholder="Mot de passe" required>
+                                    </div>
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="input-container">
+                                        <i class="fa fa-money icon"></i>
+                                        <select name="pay" id="payType">
+                                            <option>MOBILE MONEY</option>
+                                            <option>VISA</option>
+                                            <option>PAYPAL</option>
+                                  
+                                        </select>
+                                    </div>
+                                </td>
+                                <td></td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <!-- Modal footer -->
+                    <div class="modal-footer" style="background: #24252A;">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Annuler</button>
+                        <button class="btn btn-primary" data-dismiss="modal" onclick="play(event)" data-url="http://127.0.0.1:5501/asset/audio/prod.wav">Ecouter
+                    </button>
+                        <button class="btn btn-primary" type="submit">Acheter</button>
+                    </div>
+
+            </div>
+            </form>
+        </div>
+    </div>
+    <!-- The Modal -->
+    <div class="modal fade" id="myModal6">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <form action="" method="get">
+
+                    <!-- Modal Header -->
+                    <div class="modal-header" style="background: #24252A;">
+                        <h5 class="modal-title" style="color: white;">MUSIKA | ACHETER / ECOUTER</h5>
+                        <button type="button" class="close" data-dismiss="modal"><span style="color: #fdfdfd;">&times;</span></button>
+                    </div>
+
+                    <!-- Modal body -->
+                    <div class="modal-body" style="background: #fdfdfd;">
+                        <table>
+                            <tr>
+                                <td><img src="./asset/img/album/6.jpg" alt="1" width="100px" height="100px"></td>
+                                <td>
+                                    <div style="margin-left: 10px;">
+                                        <p>LEWIS CAPALDI</p>
+                                        <p>Moon</p>
+                                        <p> <i class="fa fa-play"></i> 39k <i class="fa fa-heart"></i> 24k <i class="fa fa-download"></i> 20k</p>
+                                    </div>
+
+                                </td>
+                            </tr>
+                        </table>
+                        <table width="100%" style="margin-top:10px;">
+                            <tr>
+                                <td>
+                                    <div class="input-container">
+                                        <i class="fa fa-user icon"></i>
+                                        <input class="input-field" type="text" placeholder="Nom" required>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="input-container">
+                                        <i class="fa fa-envelope icon"></i>
+                                        <input class="input-field" type="email" placeholder="Email" required>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="input-container">
+                                        <i class="fa fa-key icon"></i>
+                                        <input class="input-field" type="password" placeholder="Mot de passe" required>
+                                    </div>
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="input-container">
+                                        <i class="fa fa-money icon"></i>
+                                        <select name="pay" id="payType">
+                                        <option>MOBILE MONEY</option>
+                                        <option>VISA</option>
+                                        <option>PAYPAL</option>
+                              
+                                    </select>
+                                    </div>
+                                </td>
+                                <td></td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <!-- Modal footer -->
+                    <div class="modal-footer" style="background: #24252A;">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Annuler</button>
+                        <button class="btn btn-primary" data-dismiss="modal" onclick="play(event)" data-url="http://127.0.0.1:5501/asset/audio/prod.wav">Ecouter
+                </button>
+                        <button class="btn btn-primary" type="submit">Acheter</button>
+                    </div>
+
+            </div>
+            </form>
+        </div>
+    </div>
+    <!-- The Modal -->
+    <div class="modal fade" id="myModal8">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <form action="" method="get">
+
+                    <!-- Modal Header -->
+                    <div class="modal-header" style="background: #24252A;">
+                        <h5 class="modal-title" style="color: white;">MUSIKA | ACHETER / ECOUTER</h5>
+                        <button type="button" class="close" data-dismiss="modal"><span style="color: #fdfdfd;">&times;</span></button>
+                    </div>
+
+                    <!-- Modal body -->
+                    <div class="modal-body" style="background: #fdfdfd;">
+                        <table>
+                            <tr>
+                                <td><img src="./asset/img/album/8.jpg" alt="1" width="100px" height="100px"></td>
+                                <td>
+                                    <div style="margin-left: 10px;">
+                                        <p>LINS MARIANA</p>
+                                        <p>Pandemic</p>
+                                        <p> <i class="fa fa-play"></i> 39k <i class="fa fa-heart"></i> 24k <i class="fa fa-download"></i> 20k</p>
+                                    </div>
+
+                                </td>
+                            </tr>
+                        </table>
+                        <table width="100%" style="margin-top:10px;">
+                            <tr>
+                                <td>
+                                    <div class="input-container">
+                                        <i class="fa fa-user icon"></i>
+                                        <input class="input-field" type="text" placeholder="Nom" required>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="input-container">
+                                        <i class="fa fa-envelope icon"></i>
+                                        <input class="input-field" type="email" placeholder="Email" required>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="input-container">
+                                        <i class="fa fa-key icon"></i>
+                                        <input class="input-field" type="password" placeholder="Mot de passe" required>
+                                    </div>
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="input-container">
+                                        <i class="fa fa-money icon"></i>
+                                        <select name="pay" id="payType">
+                                            <option>MOBILE MONEY</option>
+                                            <option>VISA</option>
+                                            <option>PAYPAL</option>
+                                  
+                                        </select>
+                                    </div>
+                                </td>
+                                <td></td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <!-- Modal footer -->
+                    <div class="modal-footer" style="background: #24252A;">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Annuler</button>
+                        <button class="btn btn-primary" data-dismiss="modal" onclick="play(event)" data-url="http://127.0.0.1:5501/asset/audio/prod.wav">Ecouter
+                    </button>
+                        <button class="btn btn-primary" type="submit">Acheter</button>
+                    </div>
+
+            </div>
+            </form>
+        </div>
+    </div>
+    <!-- The Modal -->
+    <div class="modal fade" id="myModal9">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <form action="" method="get">
+
+                    <!-- Modal Header -->
+                    <div class="modal-header" style="background: #24252A;">
+                        <h5 class="modal-title" style="color: white;">MUSIKA | ACHETER / ECOUTER</h5>
+                        <button type="button" class="close" data-dismiss="modal"><span style="color: #fdfdfd;">&times;</span></button>
+                    </div>
+
+                    <!-- Modal body -->
+                    <div class="modal-body" style="background: #fdfdfd;">
+                        <table>
+                            <tr>
+                                <td><img src="./asset/img/album/9.jpg" alt="1" width="100px" height="100px"></td>
+                                <td>
+                                    <div style="margin-left: 10px;">
+                                        <p>DRAKE</p>
+                                        <p>Visit my empire</p>
+                                        <p> <i class="fa fa-play"></i> 39k <i class="fa fa-heart"></i> 24k <i class="fa fa-download"></i> 20k</p>
+                                    </div>
+
+                                </td>
+                            </tr>
+                        </table>
+                        <table width="100%" style="margin-top:10px;">
+                            <tr>
+                                <td>
+                                    <div class="input-container">
+                                        <i class="fa fa-user icon"></i>
+                                        <input class="input-field" type="text" placeholder="Nom" required>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="input-container">
+                                        <i class="fa fa-envelope icon"></i>
+                                        <input class="input-field" type="email" placeholder="Email" required>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="input-container">
+                                        <i class="fa fa-key icon"></i>
+                                        <input class="input-field" type="password" placeholder="Mot de passe" required>
+                                    </div>
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="input-container">
+                                        <i class="fa fa-money icon"></i>
+                                        <select name="pay" id="payType">
+                                        <option>MOBILE MONEY</option>
+                                        <option>VISA</option>
+                                        <option>PAYPAL</option>
+                              
+                                    </select>
+                                    </div>
+                                </td>
+                                <td></td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <!-- Modal footer -->
+                    <div class="modal-footer" style="background: #24252A;">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Annuler</button>
+                        <button class="btn btn-primary" data-dismiss="modal" onclick="play(event)" data-url="http://127.0.0.1:5501/asset/audio/prod.wav">Ecouter
+                </button>
+                        <button class="btn btn-primary" type="submit">Acheter</button>
+                    </div>
+
+            </div>
+            </form>
+        </div>
+    </div>
+    <!-- The Modal -->
+    <div class="modal fade" id="myModalh">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <form action="" method="get">
+
+                    <!-- Modal Header -->
+                    <div class="modal-header" style="background: #24252A;">
+                        <h5 class="modal-title" style="color: white;">MUSIKA | ACHETER / ECOUTER</h5>
+                        <button type="button" class="close" data-dismiss="modal"><span style="color: #fdfdfd;">&times;</span></button>
+                    </div>
+
+                    <!-- Modal body -->
+                    <div class="modal-body" style="background: #fdfdfd;">
+                        <table>
+                            <tr>
+                                <td><img src="./asset/img/album/h.jpg" alt="1" width="100px" height="100px"></td>
+                                <td>
+                                    <div style="margin-left: 10px;">
+                                        <p>KSHMR FT LINKS</p>
+                                        <p>Voice</p>
+                                        <p> <i class="fa fa-play"></i> 39k <i class="fa fa-heart"></i> 24k <i class="fa fa-download"></i> 20k</p>
+                                    </div>
+
+                                </td>
+                            </tr>
+                        </table>
+                        <table width="100%" style="margin-top:10px;">
+                            <tr>
+                                <td>
+                                    <div class="input-container">
+                                        <i class="fa fa-user icon"></i>
+                                        <input class="input-field" type="text" placeholder="Nom" required>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="input-container">
+                                        <i class="fa fa-envelope icon"></i>
+                                        <input class="input-field" type="email" placeholder="Email" required>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="input-container">
+                                        <i class="fa fa-key icon"></i>
+                                        <input class="input-field" type="password" placeholder="Mot de passe" required>
+                                    </div>
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="input-container">
+                                        <i class="fa fa-money icon"></i>
+                                        <select name="pay" id="payType">
+                                            <option>MOBILE MONEY</option>
+                                            <option>VISA</option>
+                                            <option>PAYPAL</option>
+                                  
+                                        </select>
+                                    </div>
+                                </td>
+                                <td></td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <!-- Modal footer -->
+                    <div class="modal-footer" style="background: #24252A;">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Annuler</button>
+                        <button class="btn btn-primary" data-dismiss="modal" onclick="play(event)" data-url="http://127.0.0.1:5501/asset/audio/prod.wav">Ecouter
+                    </button>
+                        <button class="btn btn-primary" type="submit">Acheter</button>
+                    </div>
+
+            </div>
+            </form>
+        </div>
+    </div>
+    <!-- javascript link -->
+    <!-- The Modal -->
+    <div class="modal fade" id="myModal10">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <form action="" method="get">
+
+                    <!-- Modal Header -->
+                    <div class="modal-header" style="background: #24252A;">
+                        <h5 class="modal-title" style="color: white;">MUSIKA | ACHETER / ECOUTER</h5>
+                        <button type="button" class="close" data-dismiss="modal"><span style="color: #fdfdfd;">&times;</span></button>
+                    </div>
+
+                    <!-- Modal body -->
+                    <div class="modal-body" style="background: #fdfdfd;">
+                        <table>
+                            <tr>
+                                <td><img src="./asset/img/album/10.jpg" alt="1" width="100px" height="100px"></td>
+                                <td>
+                                    <div style="margin-left: 10px;">
+                                        <p>KAMALA ALPORD</p>
+                                        <p>Gonzmint</p>
+                                        <p> <i class="fa fa-play"></i> 39k <i class="fa fa-heart"></i> 24k <i class="fa fa-download"></i> 20k</p>
+                                    </div>
+
+                                </td>
+                            </tr>
+                        </table>
+                        <table width="100%" style="margin-top:10px;">
+                            <tr>
+                                <td>
+                                    <div class="input-container">
+                                        <i class="fa fa-user icon"></i>
+                                        <input class="input-field" type="text" placeholder="Nom" required>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="input-container">
+                                        <i class="fa fa-envelope icon"></i>
+                                        <input class="input-field" type="email" placeholder="Email" required>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="input-container">
+                                        <i class="fa fa-key icon"></i>
+                                        <input class="input-field" type="password" placeholder="Mot de passe" required>
+                                    </div>
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="input-container">
+                                        <i class="fa fa-money icon"></i>
+                                        <select name="pay" id="payType">
+                                            <option>MOBILE MONEY</option>
+                                            <option>VISA</option>
+                                            <option>PAYPAL</option>
+                                  
+                                        </select>
+                                    </div>
+                                </td>
+                                <td></td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <!-- Modal footer -->
+                    <div class="modal-footer" style="background: #24252A;">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Annuler</button>
+                        <button class="btn btn-primary" data-dismiss="modal" onclick="play(event)" data-url="http://127.0.0.1:5501/asset/audio/prod.wav">Ecouter
+                    </button>
+                        <button class="btn btn-primary" type="submit">Acheter</button>
+                    </div>
+
+            </div>
+            </form>
+        </div>
+    </div>
+    <!-- The Modal -->
+    <div class="modal fade" id="myModalopoca">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <form action="" method="get">
+
+                    <!-- Modal Header -->
+                    <div class="modal-header" style="background: #24252A;">
+                        <h5 class="modal-title" style="color: white;">MUSIKA | ACHETER / ECOUTER</h5>
+                        <button type="button" class="close" data-dismiss="modal"><span style="color: #fdfdfd;">&times;</span></button>
+                    </div>
+
+                    <!-- Modal body -->
+                    <div class="modal-body" style="background: #fdfdfd;">
+                        <table>
+                            <tr>
+                                <td><img src="./asset/img/album/opoca.jpg" alt="1" width="100px" height="100px"></td>
+                                <td>
+                                    <div style="margin-left: 10px;">
+                                        <p>ALVIN BROWN BEATS</p>
+                                        <p>Links</p>
+                                        <p> <i class="fa fa-play"></i> 39k <i class="fa fa-heart"></i> 24k <i class="fa fa-download"></i> 20k</p>
+                                    </div>
+
+                                </td>
+                            </tr>
+                        </table>
+                        <table width="100%" style="margin-top:10px;">
+                            <tr>
+                                <td>
+                                    <div class="input-container">
+                                        <i class="fa fa-user icon"></i>
+                                        <input class="input-field" type="text" placeholder="Nom" required>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="input-container">
+                                        <i class="fa fa-envelope icon"></i>
+                                        <input class="input-field" type="email" placeholder="Email" required>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="input-container">
+                                        <i class="fa fa-key icon"></i>
+                                        <input class="input-field" type="password" placeholder="Mot de passe" required>
+                                    </div>
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="input-container">
+                                        <i class="fa fa-money icon"></i>
+                                        <select name="pay" id="payType">
+                                            <option>MOBILE MONEY</option>
+                                            <option>VISA</option>
+                                            <option>PAYPAL</option>
+                                  
+                                        </select>
+                                    </div>
+                                </td>
+                                <td></td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <!-- Modal footer -->
+                    <div class="modal-footer" style="background: #24252A;">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Annuler</button>
+                        <button class="btn btn-primary" data-dismiss="modal" onclick="play(event)" data-url="http://127.0.0.1:5501/asset/audio/prod.wav">Ecouter
+                    </button>
+                        <button class="btn btn-primary" type="submit">Acheter</button>
+                    </div>
+
+            </div>
+            </form>
+        </div>
+    </div>
+    <!-- The Modal -->
+    <div class="modal fade" id="myModal13">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <form action="" method="get">
+
+                    <!-- Modal Header -->
+                    <div class="modal-header" style="background: #24252A;">
+                        <h5 class="modal-title" style="color: white;">MUSIKA | ACHETER / ECOUTER</h5>
+                        <button type="button" class="close" data-dismiss="modal"><span style="color: #fdfdfd;">&times;</span></button>
+                    </div>
+
+                    <!-- Modal body -->
+                    <div class="modal-body" style="background: #fdfdfd;">
+                        <table>
+                            <tr>
+                                <td><img src="./asset/img/album/13.jpg" alt="1" width="100px" height="100px"></td>
+                                <td>
+                                    <div style="margin-left: 10px;">
+                                        <p>LINH</p>
+                                        <p>Bulle</p>
+                                        <p> <i class="fa fa-play"></i> 39k <i class="fa fa-heart"></i> 24k <i class="fa fa-download"></i> 20k</p>
+                                    </div>
+
+                                </td>
+                            </tr>
+                        </table>
+                        <table width="100%" style="margin-top:10px;">
+                            <tr>
+                                <td>
+                                    <div class="input-container">
+                                        <i class="fa fa-user icon"></i>
+                                        <input class="input-field" type="text" placeholder="Nom" required>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="input-container">
+                                        <i class="fa fa-envelope icon"></i>
+                                        <input class="input-field" type="email" placeholder="Email" required>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="input-container">
+                                        <i class="fa fa-key icon"></i>
+                                        <input class="input-field" type="password" placeholder="Mot de passe" required>
+                                    </div>
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="input-container">
+                                        <i class="fa fa-money icon"></i>
+                                        <select name="pay" id="payType">
+                                        <option>MOBILE MONEY</option>
+                                        <option>VISA</option>
+                                        <option>PAYPAL</option>
+                              
+                                    </select>
+                                    </div>
+                                </td>
+                                <td></td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <!-- Modal footer -->
+                    <div class="modal-footer" style="background: #24252A;">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Annuler</button>
+                        <button class="btn btn-primary" data-dismiss="modal" onclick="play(event)" data-url="http://127.0.0.1:5501/asset/audio/prod.wav">Ecouter
+                </button>
+                        <button class="btn btn-primary" type="submit">Acheter</button>
+                    </div>
+
+            </div>
+            </form>
+        </div>
+    </div>
+    <!-- The Modal -->
+    <div class="modal fade" id="myModal14">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <form action="" method="get">
+
+                    <!-- Modal Header -->
+                    <div class="modal-header" style="background: #24252A;">
+                        <h5 class="modal-title" style="color: white;">MUSIKA | ACHETER / ECOUTER</h5>
+                        <button type="button" class="close" data-dismiss="modal"><span style="color: #fdfdfd;">&times;</span></button>
+                    </div>
+
+                    <!-- Modal body -->
+                    <div class="modal-body" style="background: #fdfdfd;">
+                        <table>
+                            <tr>
+                                <td><img src="./asset/img/album/14.jpg" alt="1" width="100px" height="100px"></td>
+                                <td>
+                                    <div style="margin-left: 10px;">
+                                        <p>BELIE ELISH</p>
+                                        <p>Ringman town</p>
+                                        <p> <i class="fa fa-play"></i> 39k <i class="fa fa-heart"></i> 24k <i class="fa fa-download"></i> 20k</p>
+                                    </div>
+
+                                </td>
+                            </tr>
+                        </table>
+                        <table width="100%" style="margin-top:10px;">
+                            <tr>
+                                <td>
+                                    <div class="input-container">
+                                        <i class="fa fa-user icon"></i>
+                                        <input class="input-field" type="text" placeholder="Nom" required>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="input-container">
+                                        <i class="fa fa-envelope icon"></i>
+                                        <input class="input-field" type="email" placeholder="Email" required>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="input-container">
+                                        <i class="fa fa-key icon"></i>
+                                        <input class="input-field" type="password" placeholder="Mot de passe" required>
+                                    </div>
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="input-container">
+                                        <i class="fa fa-money icon"></i>
+                                        <select name="pay" id="payType">
+                                        <option>MOBILE MONEY</option>
+                                        <option>VISA</option>
+                                        <option>PAYPAL</option>
+                              
+                                    </select>
+                                    </div>
+                                </td>
+                                <td></td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <!-- Modal footer -->
+                    <div class="modal-footer" style="background: #24252A;">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Annuler</button>
+                        <button class="btn btn-primary" data-dismiss="modal" onclick="play(event)" data-url="http://127.0.0.1:5501/asset/audio/prod.wav">Ecouter
+                </button>
+                        <button class="btn btn-primary" type="submit">Acheter</button>
+                    </div>
+
+            </div>
+            </form>
+        </div>
+    </div>
+    <!-- The Modal -->
+    <div class="modal fade" id="myModal15">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <form action="" method="get">
+
+                    <!-- Modal Header -->
+                    <div class="modal-header" style="background: #24252A;">
+                        <h5 class="modal-title" style="color: white;">MUSIKA | ACHETER / ECOUTER</h5>
+                        <button type="button" class="close" data-dismiss="modal"><span style="color: #fdfdfd;">&times;</span></button>
+                    </div>
+
+                    <!-- Modal body -->
+                    <div class="modal-body" style="background: #fdfdfd;">
+                        <table>
+                            <tr>
+                                <td><img src="./asset/img/album/15.jpg" alt="1" width="100px" height="100px"></td>
+                                <td>
+                                    <div style="margin-left: 10px;">
+                                        <p>KIINA</p>
+                                        <p>Get you the Moon</p>
+                                        <p> <i class="fa fa-play"></i> 39k <i class="fa fa-heart"></i> 24k <i class="fa fa-download"></i> 20k</p>
+                                    </div>
+
+                                </td>
+                            </tr>
+                        </table>
+                        <table width="100%" style="margin-top:10px;">
+                            <tr>
+                                <td>
+                                    <div class="input-container">
+                                        <i class="fa fa-user icon"></i>
+                                        <input class="input-field" type="text" placeholder="Nom" required>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="input-container">
+                                        <i class="fa fa-envelope icon"></i>
+                                        <input class="input-field" type="email" placeholder="Email" required>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="input-container">
+                                        <i class="fa fa-key icon"></i>
+                                        <input class="input-field" type="password" placeholder="Mot de passe" required>
+                                    </div>
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="input-container">
+                                        <i class="fa fa-money icon"></i>
+                                        <select name="pay" id="payType">
+                                            <option>MOBILE MONEY</option>
+                                            <option>VISA</option>
+                                            <option>PAYPAL</option>
+                                  
+                                        </select>
+                                    </div>
+                                </td>
+                                <td></td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <!-- Modal footer -->
+                    <div class="modal-footer" style="background: #24252A;">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Annuler</button>
+                        <button class="btn btn-primary" data-dismiss="modal" onclick="play(event)" data-url="http://127.0.0.1:5501/asset/audio/prod.wav">Ecouter
+                    </button>
+                        <button class="btn btn-primary" type="submit">Acheter</button>
+                    </div>
+
+            </div>
+            </form>
+        </div>
+    </div>
+    <!-- The Modal -->
+    <div class="modal fade" id="myModal16">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <form action="" method="get">
+
+                    <!-- Modal Header -->
+                    <div class="modal-header" style="background: #24252A;">
+                        <h5 class="modal-title" style="color: white;">MUSIKA | ACHETER / ECOUTER</h5>
+                        <button type="button" class="close" data-dismiss="modal"><span style="color: #fdfdfd;">&times;</span></button>
+                    </div>
+
+                    <!-- Modal body -->
+                    <div class="modal-body" style="background: #fdfdfd;">
+                        <table>
+                            <tr>
+                                <td><img src="./asset/img/album/16.jpg" alt="1" width="100px" height="100px"></td>
+                                <td>
+                                    <div style="margin-left: 10px;">
+                                        <p>TRPOCIS NOTULUS</p>
+                                        <p>Bitch band</p>
+                                        <p> <i class="fa fa-play"></i> 39k <i class="fa fa-heart"></i> 24k <i class="fa fa-download"></i> 20k</p>
+                                    </div>
+
+                                </td>
+                            </tr>
+                        </table>
+                        <table width="100%" style="margin-top:10px;">
+                            <tr>
+                                <td>
+                                    <div class="input-container">
+                                        <i class="fa fa-user icon"></i>
+                                        <input class="input-field" type="text" placeholder="Nom" required>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="input-container">
+                                        <i class="fa fa-envelope icon"></i>
+                                        <input class="input-field" type="email" placeholder="Email" required>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="input-container">
+                                        <i class="fa fa-key icon"></i>
+                                        <input class="input-field" type="password" placeholder="Mot de passe" required>
+                                    </div>
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="input-container">
+                                        <i class="fa fa-money icon"></i>
+                                        <select name="pay" id="payType">
+                                        <option>MOBILE MONEY</option>
+                                        <option>VISA</option>
+                                        <option>PAYPAL</option>
+                              
+                                    </select>
+                                    </div>
+                                </td>
+                                <td></td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <!-- Modal footer -->
+                    <div class="modal-footer" style="background: #24252A;">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Annuler</button>
+                        <button class="btn btn-primary" data-dismiss="modal" onclick="play(event)" data-url="http://127.0.0.1:5501/asset/audio/prod.wav">Ecouter
+                </button>
+                        <button class="btn btn-primary" type="submit">Acheter</button>
+                    </div>
+
+            </div>
+            </form>
+        </div>
+    </div>
+    <!-- The Modal -->
+    <div class="modal fade" id="myModalpo">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <form action="" method="get">
+
+                    <!-- Modal Header -->
+                    <div class="modal-header" style="background: #24252A;">
+                        <h5 class="modal-title" style="color: white;">MUSIKA | ACHETER / ECOUTER</h5>
+                        <button type="button" class="close" data-dismiss="modal"><span style="color: #fdfdfd;">&times;</span></button>
+                    </div>
+
+                    <!-- Modal body -->
+                    <div class="modal-body" style="background: #fdfdfd;">
+                        <table>
+                            <tr>
+                                <td><img src="./asset/img/album/po.jpg" alt="1" width="100px" height="100px"></td>
+                                <td>
+                                    <div style="margin-left: 10px;">
+                                        <p>POPCAN</p>
+                                        <p>African Gial</p>
+                                        <p> <i class="fa fa-play"></i> 39k <i class="fa fa-heart"></i> 24k <i class="fa fa-download"></i> 20k</p>
+                                    </div>
+
+                                </td>
+                            </tr>
+                        </table>
+                        <table width="100%" style="margin-top:10px;">
+                            <tr>
+                                <td>
+                                    <div class="input-container">
+                                        <i class="fa fa-user icon"></i>
+                                        <input class="input-field" type="text" placeholder="Nom" required>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="input-container">
+                                        <i class="fa fa-envelope icon"></i>
+                                        <input class="input-field" type="email" placeholder="Email" required>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="input-container">
+                                        <i class="fa fa-key icon"></i>
+                                        <input class="input-field" type="password" placeholder="Mot de passe" required>
+                                    </div>
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="input-container">
+                                        <i class="fa fa-money icon"></i>
+                                        <select name="pay" id="payType">
+                                            <option>MOBILE MONEY</option>
+                                            <option>VISA</option>
+                                            <option>PAYPAL</option>
+                                  
+                                        </select>
+                                    </div>
+                                </td>
+                                <td></td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <!-- Modal footer -->
+                    <div class="modal-footer" style="background: #24252A;">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Annuler</button>
+                        <button class="btn btn-primary" data-dismiss="modal" onclick="play(event)" data-url="http://127.0.0.1:5501/asset/audio/prod.wav">Ecouter
+                    </button>
+                        <button class="btn btn-primary" type="submit">Acheter</button>
+                    </div>
+
+            </div>
+            </form>
+        </div>
+    </div>
+    <!-- The Modal -->
+    <div class="modal fade" id="myModalmus2">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <form action="" method="get">
+
+                    <!-- Modal Header -->
+                    <div class="modal-header" style="background: #24252A;">
+                        <h5 class="modal-title" style="color: white;">MUSIKA | ACHETER / ECOUTER</h5>
+                        <button type="button" class="close" data-dismiss="modal"><span style="color: #fdfdfd;">&times;</span></button>
+                    </div>
+
+                    <!-- Modal body -->
+                    <div class="modal-body" style="background: #fdfdfd;">
+                        <table>
+                            <tr>
+                                <td><img src="./asset/img/album/musique 2.jpg" alt="1" width="100px" height="100px"></td>
+                                <td>
+                                    <div style="margin-left: 10px;">
+                                        <p>FRENCH MONTANA</p>
+                                        <p>Lost on you</p>
+                                        <p> <i class="fa fa-play"></i> 39k <i class="fa fa-heart"></i> 24k <i class="fa fa-download"></i> 20k</p>
+                                    </div>
+
+                                </td>
+                            </tr>
+                        </table>
+                        <table width="100%" style="margin-top:10px;">
+                            <tr>
+                                <td>
+                                    <div class="input-container">
+                                        <i class="fa fa-user icon"></i>
+                                        <input class="input-field" type="text" placeholder="Nom" required>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="input-container">
+                                        <i class="fa fa-envelope icon"></i>
+                                        <input class="input-field" type="email" placeholder="Email" required>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="input-container">
+                                        <i class="fa fa-key icon"></i>
+                                        <input class="input-field" type="password" placeholder="Mot de passe" required>
+                                    </div>
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="input-container">
+                                        <i class="fa fa-money icon"></i>
+                                        <select name="pay" id="payType">
+                                            <option>MOBILE MONEY</option>
+                                            <option>VISA</option>
+                                            <option>PAYPAL</option>
+                                  
+                                        </select>
+                                    </div>
+                                </td>
+                                <td></td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <!-- Modal footer -->
+                    <div class="modal-footer" style="background: #24252A;">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Annuler</button>
+                        <button class="btn btn-primary" data-dismiss="modal" onclick="play(event)" data-url="http://127.0.0.1:5501/asset/audio/prod.wav">Ecouter
+                    </button>
+                        <button class="btn btn-primary" type="submit">Acheter</button>
+                    </div>
+
+            </div>
+            </form>
+        </div>
+    </div>
+    <!-- The Modal -->
+    <div class="modal fade" id="myModalmus1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <form action="" method="get">
+
+                    <!-- Modal Header -->
+                    <div class="modal-header" style="background: #24252A;">
+                        <h5 class="modal-title" style="color: white;">MUSIKA | ACHETER / ECOUTER</h5>
+                        <button type="button" class="close" data-dismiss="modal"><span style="color: #fdfdfd;">&times;</span></button>
+                    </div>
+
+                    <!-- Modal body -->
+                    <div class="modal-body" style="background: #fdfdfd;">
+                        <table>
+                            <tr>
+                                <td><img src="./asset/img/album/musique 1.jpg" alt="1" width="100px" height="100px"></td>
+                                <td>
+                                    <div style="margin-left: 10px;">
+                                        <p>DADJU</p>
+                                        <p>Toxic love</p>
+                                        <p> <i class="fa fa-play"></i> 39k <i class="fa fa-heart"></i> 24k <i class="fa fa-download"></i> 20k</p>
+                                    </div>
+
+                                </td>
+                            </tr>
+                        </table>
+                        <table width="100%" style="margin-top:10px;">
+                            <tr>
+                                <td>
+                                    <div class="input-container">
+                                        <i class="fa fa-user icon"></i>
+                                        <input class="input-field" type="text" placeholder="Nom" required>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="input-container">
+                                        <i class="fa fa-envelope icon"></i>
+                                        <input class="input-field" type="email" placeholder="Email" required>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="input-container">
+                                        <i class="fa fa-key icon"></i>
+                                        <input class="input-field" type="password" placeholder="Mot de passe" required>
+                                    </div>
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="input-container">
+                                        <i class="fa fa-money icon"></i>
+                                        <select name="pay" id="payType">
+                                            <option>MOBILE MONEY</option>
+                                            <option>VISA</option>
+                                            <option>PAYPAL</option>
+                                  
+                                        </select>
+                                    </div>
+                                </td>
+                                <td></td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <!-- Modal footer -->
+                    <div class="modal-footer" style="background: #24252A;">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Annuler</button>
+                        <button class="btn btn-primary" data-dismiss="modal" onclick="play(event)" data-url="http://127.0.0.1:5501/asset/audio/prod.wav">Ecouter
+                    </button>
+                        <button class="btn btn-primary" type="submit">Acheter</button>
+                    </div>
+
+            </div>
+            </form>
+        </div>
+    </div>
+    <script src=" ./asset/js/jquery.min.js "></script>
+    <script src="./asset/js/bootstrap.min.js "></script>
+    <script type="text/javascript " src="./asset/popper.js/1.14.7/umd/popper.min.js "></script>
+    <script src="./asset/js/prod.js "></script>
+</body>
+
+</html>

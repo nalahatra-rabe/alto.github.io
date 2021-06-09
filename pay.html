@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Musika | Mon Payment</title>
+    <link rel="stylesheet" type="text/css" href="./asset/css/index.css" />
+    <link rel="shortcut icon" href="./asset/img/ICON PACK/Audio Wave_50px.png" />
+    <link rel="stylesheet" href="./asset/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./asset/css/w3.css">
+    <link rel="stylesheet" href="./asset/plugins/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./asset/css/style.css">
+    <link rel="stylesheet" href="./asset/css/pay.css">
+    <style>
+        .input-container {
+            display: -ms-flexbox;
+            /* IE10 */
+            display: flex;
+            width: 100%;
+            margin-bottom: 15px;
+        }
+        
+        .icon {
+            padding: 10px;
+            background: dodgerblue;
+            color: white;
+            min-width: 50px;
+            text-align: center;
+            border-radius: 10px 0px 0px 0px;
+        }
+        
+        .input-field {
+            width: 100%;
+            padding: 10px;
+            outline: none;
+            background: rgba(36, 37, 42, .8);
+            border: 0;
+            border-radius: 0px 5px 0px 0px;
+            transition: all 0.5s ease;
+            color: #fdfdfd;
+        }
+        
+        .input-field:focus {
+            background: #24252A;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <a name="top"></a>
+
+        <nav class="navbar navbar-expand-sm bg-dark  fixed-top navbar-dark " id="myNav">
+            <!-- Brand/logo -->
+            <a class="navbar-brand" href="./index.html">MUSIKA | <b style="font-size: 12px;">The World of Music</b></a>
+            <!--Bar de recherche-->
+            <form class="form-inline" action="./index.html">
+                <input class="form-control mr-sm-2" type="text" placeholder="Recherche...">
+                <button class="btn btn-primary" type="submit"><i class="fa fa-search"></i></button>
+            </form>
+
+            <!--fin barre de recherche-->
+            <!-- Links -->
+            <ul class="navbar-nav">
+                <li class="nav-item ">
+                    <a class="nav-link " href="./index.html"><img src="./asset/img/ICON PACK/Home_48px.png" alt=""></a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="./prod.html"><img src="./asset/img/ICON PACK/Audio Wave_50px.png" alt=""></a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="./meet.html"><img src="./asset/img/ICON PACK/Heart_50px.png" alt=""></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link " href="./pay.html"><img src="./asset/img/ICON PACK/Shopping Bag_64px.png" alt="">
+                        <span class="badge badge-danger" style="position: absolute;">1</span></a>
+                </li>
+
+
+
+                <!-- end notification -->
+                <li class="nav-item menu-item">
+                    <a class="nav-link" onclick="openNav()"><img src="./asset/img/ICON PACK/Bars.png" alt=""></a>
+                </li>
+            </ul>
+        </nav>
+
+    </header>
+    <div class="message">
+        <div>
+            <h4>Pour beneficier le buisiness musical <br> Il faut réglé votre mode de payment <br>
+                <font style="margin-left: 70px;">ainsi votre compte</font>
+            </h4>
+        </div>
+    </div>
+    <div class="payment_page">
+        <div class="row">
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                <div class="left_card ">
+
+                    <h3 class="w3-center">PARAMETRE DE PAYMENT</h3>
+                    <h5>VISA <i class="fa fa-cc-visa"></i></h5>
+                    <form action="./prod.html">
+                        <table width="60%" style="margin-top:10px;margin-left: 20%;" class="w3-center">
+                            <tr>
+                                <td>
+                                    <div class="input-container">
+                                        <i class="fa fa-user icon"></i>
+                                        <input class="input-field" type="text" placeholder="Nom" required>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="input-container">
+                                        <i class="fa fa-envelope icon"></i>
+                                        <input class="input-field" type="email" placeholder="Email" required>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="input-container">
+                                        <i class="fa fa-cc-visa icon"></i>
+                                        <input class="input-field" type="text" placeholder="Numéro du carte" required>
+                                    </div>
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="input-container">
+                                        <i class="fa fa-key icon"></i>
+                                        <input class="input-field" type="password" placeholder="Mot de passe" required>
+                                    </div>
+                                </td>
+
+                            </tr>
+
+                        </table>
+                        <div class="own_btn" style="margin-left:59% ;">
+                            <button class="btn btn-danger" type="reset">Annuler</button>
+                            <button class="btn btn-primary">Confirmer</button>
+                        </div>
+
+                    </form><br>
+                    <h5 style="background: #24252A;color: #fdfdfd;margin-left: 0;font-size: 20px;" class="w3-center">OU</h5><br>
+                    <h5>MOBILE MONEY <i class="fa fa-mobile"></i></h5>
+                    <form action="./prod.html">
+                        <table width="60%" style="margin-top:10px;margin-left: 20%;" class="w3-center">
+                            <tr>
+                                <td>
+                                    <div class="input-container">
+                                        <i class="fa fa-user icon"></i>
+                                        <input class="input-field" type="text" placeholder="Nom" required>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="input-container">
+                                        <i class="fa fa-mobile icon"></i>
+                                        <input class="input-field" type="text" placeholder="Numéro Téléphone" required>
+                                    </div>
+                                </td>
+                            </tr>
+
+
+                            <tr>
+                                <td>
+                                    <div class="input-container">
+                                        <i class="fa fa-key icon"></i>
+                                        <input class="input-field" type="password" placeholder="Mot de passe" required>
+                                    </div>
+                                </td>
+
+                            </tr>
+
+                        </table>
+                        <div class="own_btn" style="margin-left:59% ;">
+                            <button class="btn btn-danger" type="reset">Annuler</button>
+                            <button class="btn btn-primary">Confirmer</button>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                <div class="right_card">
+                    <img src="./asset/img/bank-card-svgrepo-com.svg" alt="">
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- javacript link -->
+    <script src=" ./asset/js/jquery.min.js "></script>
+    <script src="./asset/js/bootstrap.min.js "></script>
+    <script type="text/javascript " src="./asset/popper.js/1.14.7/umd/popper.min.js "></script>
+    <script src="./asset/js/index.js "></script>
+
+</body>
+
+</html>

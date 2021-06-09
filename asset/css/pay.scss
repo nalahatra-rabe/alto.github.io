@@ -1,0 +1,112 @@
+@font-face {
+    font-family: "Muli-Regular";
+    src: url("../fonts/Muli/Muli-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Muli-Bold";
+    src: url("../font/Muli/Muli-Bold.ttf");
+}
+
+@font-face {
+    font-family: "Muli-Light";
+    src: url("../font/Muli/Muli-Light.ttf");
+}
+
+@font-face {
+    font-family: "Modern_Sans";
+    src: url("../font/ModernSans/ModernSans-Light.otf");
+}
+
+@font-face {
+    font-family: "SEGOSCRIPT";
+    src: url("../fonts/segoesc.ttf");
+}
+
+html,
+body {
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    font-family: "Muli-Regular";
+    width: 100%;
+    height: 100vh;
+    color: #ffffff;
+    background: linear-gradient(80deg, #1297E0, #9B59B6);
+}
+
+body {
+    .message {
+        color: #ffffff;
+        margin-top: 100px;
+        margin-left: 40px;
+        div {
+            padding: 20px;
+            width: 400px;
+            h4 {
+                background: rgba(0, 0, 0, .6);
+                animation: message_animation 2s;
+                padding: 20px;
+                opacity: 0;
+            }
+        }
+    }
+    .payment_page {
+        .row {
+            div {
+                .left_card {
+                    width: 80%;
+                    height: 700px;
+                    background: #ffffff;
+                    margin-left: 60px;
+                    margin-top: -80px;
+                    animation: mate 2.5s;
+                    box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
+                    border-radius: 5px;
+                    position: relative;
+                    color: #24252A;
+                    h3 {
+                        color: #24252A;
+                        font-weight: bold;
+                    }
+                    h5 {
+                        font-weight: bold;
+                        margin-left: 20px;
+                    }
+                }
+                .right_card {
+                    width: 50%;
+                    height: 700px;
+                    margin-left: 100px;
+                    img {}
+                }
+            }
+        }
+    }
+}
+
+@keyframes message_animation {
+    0% {
+        background: rgba(0, 0, 0, .6);
+    }
+    50% {
+        background: rgba(0, 0, 0, .8);
+        transform: scale(1);
+        opacity: 1;
+    }
+    100% {
+        background: rgba(0, 0, 0, .6);
+    }
+}
+
+@keyframes mate {
+    0% {
+        margin-top: 0px;
+    }
+    50% {
+        margin-top: 0px;
+    }
+    100% {
+        margin-top: -80px;
+    }
+}

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MUSIKA | Login</title>
+    <link rel="shortcut icon" href="./asset/img/ICON PACK/Audio Wave_50px.png" />
+    <link rel="stylesheet" href="./asset/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./asset/css/w3.css">
+    <link rel="stylesheet" href="./asset/plugins/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./asset/css/login.css">
+
+</head>
+
+<body>
+    <h1 align="center" style="margin-top: 80px;font-size: 80px;padding: 20px;letter-spacing: 1px; color: rgba(255, 255, 255,.5);font-weight: bold;">MUSIKA | Le Monde de la Musique</h1>
+    <div class="container" style="margin-top: 10vh;">
+        <div class="tab">
+            <button class="tablinks" onclick="openCity(event, 'Login')" id="defaultOpen" style="border-radius: 20px 0px 0px 0px;"><i class="fa fa-user"></i> <font>Se connecter</font></button>
+            <button class="tablinks" onclick="openCity(event, 'Incription')" style="border-radius: 0px 0px 0px 0px;"><i class="fa fa-address-card"></i> <font>Inscription</font></button>
+
+        </div>
+
+        <div id="Login" class="tabcontent">
+            <div class="login">
+                <h1 align="center" style="margin-top: -20px;font-size: 20px;padding: 20px;letter-spacing: 1px;">MUSIKA | Le Monde de la Musique</h1>
+                <form action="./prod.html" style="max-width:500px;margin:auto;margin-top: -20px;">
+
+                    <div class="input-container">
+                        <i class="fa fa-user icon"></i>
+                        <input class="input-field" type="text" placeholder="Nom" required>
+                    </div>
+
+                    <div class="input-container">
+                        <i class="fa fa-envelope icon"></i>
+                        <input class="input-field" type="email" placeholder="Email" required>
+                    </div>
+
+                    <div class="input-container">
+                        <i class="fa fa-key icon"></i>
+                        <input class="input-field" type="password" placeholder="Mot de passe" required>
+                    </div>
+                    <div class="input-container">
+
+
+                    </div>
+
+
+                    <div>
+                        <button type="submit" class="btn">Se connecter  <i class="fa fa-arrow-circle-right"></i></button>
+                    </div>
+                    <div style="margin-top: 10px;">
+                        <a href="#">Mot de passe oubli&eacute;?</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div id="Incription" class="tabcontent">
+
+
+            <form action="./pay.html" style="max-width:500px;margin:auto;margin-top: 50px;animation: up .5s;">
+
+                <div class="input-container">
+                    <i class="fa fa-user icon"></i>
+                    <input class="input-field" type="text" placeholder="Nom" required>
+                </div>
+                <div class="input-container">
+                    <i class="fa fa-user icon"></i>
+                    <input class="input-field" type="text" placeholder="Prenoms" required>
+                </div>
+
+
+                <div class="input-container">
+                    <i class="fa fa-calendar icon"></i>
+                    <input class="input-field" type="date" placeholder="Date de naissance" required>
+                </div>
+                <div class="input-container">
+                    <i class="fa fa-money icon"></i>
+                    <select name="pay" id="payType">
+                        <option>MOBILE MONEY</option>
+                        <option>VISA</option>
+                        <option>PAYPAL</option>
+              
+                    </select>
+                </div>
+                <div class="input-container">
+                    <i class="fa fa-envelope icon"></i>
+                    <input class="input-field" type="email" placeholder="Email" required>
+                </div>
+
+                <div class="input-container">
+                    <i class="fa fa-key icon"></i>
+                    <input class="input-field" type="password" placeholder="Mot de passe" required>
+                </div>
+                <div class="input-container">
+
+
+                </div>
+
+
+                <div>
+                    <button type="submit" class="btn">Cree un Compte  <i class="fa fa-arrow-circle-right"></i></button>
+                </div>
+            </form>
+        </div>
+
+        <div id="NoPass" class="tabcontent">
+
+        </div>
+
+
+
+    </div>
+
+    <!-- javascript link -->
+    <script>
+        function openCity(evt, cityName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementById("defaultOpen").click();
+    </script>
+    <script src=" ./asset/js/jquery.min.js "></script>
+    <script src="./asset/js/bootstrap.min.js "></script>
+    <script type="text/javascript " src="./asset/popper.js/1.14.7/umd/popper.min.js "></script>
+    <script src="./asset/js/index.js"></script>
+
+</body>
+
+</html>
